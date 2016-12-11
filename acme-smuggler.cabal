@@ -1,5 +1,5 @@
 name:                acme-smuggler
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Smuggle arbitrary values in ()
 description:         Please see README.md
 homepage:            https://github.com/benclifford/acme-smuggler
@@ -8,7 +8,7 @@ license-file:        LICENSE
 author:              Ben Clifford <benc@hawaga.org.uk>
 maintainer:          Ben Clifford <benc@hawaga.org.uk>
 copyright:           2016 Ben Clifford
-category:            Acme
+category:            ACME
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
@@ -18,7 +18,7 @@ library
   exposed-modules:     Acme.Smuggler
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
-  ghc-options:         -Werror -Wall
+  ghc-options:         -Wall
 
 test-suite acme-smuggler-test
   type:                exitcode-stdio-1.0
