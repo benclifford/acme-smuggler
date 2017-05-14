@@ -16,10 +16,10 @@ prj :: Typeable t => () -> Maybe t
 prj = discover
 
 smuggle :: Typeable t => t -> ()
-smuggle v = unsafePerformIO $ throw (toDyn v)
+smuggle = unsafePerformIO . throw . toDyn
 
 discover :: Typeable t => () -> Maybe t
-discover v = either (fromDynamic) (const Nothing)
-  $ unsafePerformIO
-  $ try
-  $ case v of () -> return ()
+discover = either (fromDynamic) (const Nothing)
+  . unsafePerformIO
+  . try
+  . (pure $!)
