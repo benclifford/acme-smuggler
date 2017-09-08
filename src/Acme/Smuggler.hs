@@ -5,7 +5,7 @@ module Acme.Smuggler
 import Data.Typeable (Typeable)
 import Data.Dynamic (toDyn, fromDynamic)
 import System.IO.Unsafe (unsafePerformIO)
-import Control.Exception (try, throw)
+import Control.Exception (try, throw, evaluate)
 
 -- | fancy name for smuggle
 inj :: Typeable t => t -> ()
@@ -22,4 +22,4 @@ discover :: Typeable t => () -> Maybe t
 discover = either (fromDynamic) (const Nothing)
   . unsafePerformIO
   . try
-  . (pure $!)
+  . evaluate
