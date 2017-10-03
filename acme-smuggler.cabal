@@ -1,6 +1,6 @@
 name:                acme-smuggler
-version:             0.1.0.2
-synopsis:            Smuggle arbitrary values in ()
+version:             1.1.0.0
+synopsis:            Smuggle arbitrary values in arbitrary types
 description:         Please see README.md
 homepage:            https://github.com/benclifford/acme-smuggler
 license:             BSD3
