@@ -1,5 +1,5 @@
 module Acme.Smuggler
-    ( inj, prj, smuggle, discover
+    ( inj, prj, smuggle, discover, mkId
     ) where
 
 import Data.Typeable (Typeable)
@@ -23,3 +23,9 @@ discover = either (fromDynamic) (const Nothing)
   . unsafePerformIO
   . try
   . evaluate
+
+-- | All functions of type (a -> a) are `id`. 
+-- This helper lets you create arbitrary `id` functions of
+-- type (a -> a) which smuggle through a supplied value
+mkId :: Typeable t => t -> (a -> a)
+mkId t = const (smuggle t)
