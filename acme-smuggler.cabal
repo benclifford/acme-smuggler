@@ -1,5 +1,5 @@
 name:                acme-smuggler
-version:             1.1.0.0
+version:             1.1.1.0
 synopsis:            Smuggle arbitrary values in arbitrary types
 description:         Please see README.md
 homepage:            https://github.com/benclifford/acme-smuggler
@@ -7,7 +7,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Ben Clifford <benc@hawaga.org.uk>
 maintainer:          Ben Clifford <benc@hawaga.org.uk>
-copyright:           2016-2017 Ben Clifford
+copyright:           2016-2018 Ben Clifford
 category:            ACME
 build-type:          Simple
 extra-source-files:  README.md
