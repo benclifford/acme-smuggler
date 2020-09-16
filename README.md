@@ -27,3 +27,5 @@ Just 7
 Nothing
 ```
 
+Here are slides for a short talk that I gave at the London Haskell User Group:
+http://www.hawaga.org.uk/ben/tech/london-hug-acme-smuggler/presentation.html
