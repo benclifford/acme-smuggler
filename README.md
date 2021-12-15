@@ -31,3 +31,8 @@ Here are slides for a short talk that I gave at the London Haskell User Group:
 http://www.hawaga.org.uk/ben/tech/london-hug-acme-smuggler/presentation.html
 and my original blog post:
 http://benctechnicalblog.blogspot.com/2016/11/smuggling-things-in-dirty-bottom.html
+
+## History
+
+acme-smuggler originated as a workaround for an issue @tdietert and I had
+with the JuicyPixels library, https://github.com/Twinside/Juicy.Pixels/issues/128
