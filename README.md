@@ -35,5 +35,5 @@ http://benctechnicalblog.blogspot.com/2016/11/smuggling-things-in-dirty-bottom.h
 
 ## History
 
-acme-smuggler originated as a workaround for an issue @tdietert and I had
+acme-smuggler originated in a workaround for an issue @tdietert and I had
 with the JuicyPixels library, https://github.com/Twinside/Juicy.Pixels/issues/128
