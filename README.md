@@ -7,8 +7,6 @@ internal structure.
 Nevertheless, acme-smuggler allows you to smuggle
 arbitrary values into `()` and discover them later.
 
-And! `Void` has no values at all, but acme-smuggler lets you
-smuggle values into `Void`. Or into any other Haskell type.
 
 ```haskell
 > x = smuggle "hello"
@@ -26,6 +24,9 @@ Just 7
 > discover x :: Maybe Integer
 Nothing
 ```
+
+And! `Void` has no values at all, but acme-smuggler even lets you
+smuggle values into `Void`. Or into any other Haskell type.
 
 Here are slides for a short talk that I gave at the London Haskell User Group:
 http://www.hawaga.org.uk/ben/tech/london-hug-acme-smuggler/presentation.html
